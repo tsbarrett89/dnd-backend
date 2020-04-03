@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/tsbarrett89/dnd-backend/issues"
   },
-  "homepage": "https://github.com/tsbarrett89/dnd-backend#readme"
+  "homepage": "https://github.com/tsbarrett89/dnd-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
