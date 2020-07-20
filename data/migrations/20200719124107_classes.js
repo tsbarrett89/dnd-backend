@@ -4,6 +4,23 @@ exports.up = function(knex) {
         tbl.increments();
         tbl.string('class_name')
             .notNullable()
+            .unique()
+        tbl.string('hit_dice')
+            .notNullable()
+        tbl.string('armor_proficiencies')
+            .notNullable()
+        tbl.string('weapon_proficiencies')
+            .notNullable()
+        tbl.string('tool_proficiencies')
+            .notNullable()
+        tbl.string('save_proficiencies')
+            .notNullable()
+        tbl.integer('skill_choice_number')
+            .notNullable()
+        tbl.text('skill_choices')
+            .notNullable()
+        tbl.text('equipment')
+            .notNullable()
   })
 };
 
