@@ -1,8 +1,49 @@
 
 exports.up = function(knex) {
-  
+    return knex.schema.createTable('characters', tbl => {
+        tbl.increments()
+        tbl.integer('user_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('users')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.string('character_name')
+            .notNullable()
+        tbl.integer('level')
+            .unsigned()
+            .notNullable()
+        tbl.integer('race_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('races')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.integer('background_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('backgrounds')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.integer('alignment_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('alignment')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.integer('experience')
+            .unsigned()
+            .notNullable()
+        tbl.integer('hp')
+            .unsigned()
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
-  
+    return knex.schema.dropTableIfExists('characters')
 };
