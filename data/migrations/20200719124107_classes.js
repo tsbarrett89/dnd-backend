@@ -1,4 +1,3 @@
-
 exports.up = function(knex) {
     return knex.schema.createTable('classes', tbl => {
         tbl.increments();
@@ -21,9 +20,21 @@ exports.up = function(knex) {
             .notNullable()
         tbl.text('equipment')
             .notNullable()
-  })
+    })
+    .createTable('class_archetpes', tbl => {
+        tbl.increments();
+        tbl.integer('class_id')
+            .unsigned()
+            .defaultTo(0)
+            .references('id')
+            .inTable('classes')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.string('archetype')
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('classes')
+    return knex.schema.dropTableIfExists('classes').dropTableIfExists('class_archetypes')
 };
