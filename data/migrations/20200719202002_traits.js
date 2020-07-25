@@ -9,7 +9,7 @@ exports.up = function(knex) {
             .inTable('races')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('name')
+        tbl.string('trait')
             .notNullable()
         tbl.text('description')
             .notNullable()
