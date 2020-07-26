@@ -88,10 +88,28 @@ exports.up = function(knex) {
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
     })
+    .createTable('weapons_properties', tbl => {
+        tbl.increments()
+        tbl.integer('weapon_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('weapons')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.integer('weapon_property_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('weapon_properties')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+    })
 };
 
 exports.down = function(knex) {
     return knex.schema
+        .dropTableIfExists('weapons_properties')
         .dropTableIfExists('character_gear')
         .dropTableIfExists('character_weapons')
         .dropTableIfExists('character_armor')
