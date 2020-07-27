@@ -21,11 +21,11 @@ exports.up = function(knex) {
         tbl.text('equipment')
             .notNullable()
     })
-    .createTable('class_archetpes', tbl => {
+    .createTable('class_archetypes', tbl => {
         tbl.increments();
         tbl.integer('class_id')
             .unsigned()
-            .defaultTo(0)
+            .notNullable()
             .references('id')
             .inTable('classes')
             .onDelete('RESTRICT')
