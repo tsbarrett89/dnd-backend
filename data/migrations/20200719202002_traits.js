@@ -17,5 +17,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-    return knex.scehma.dropTableIfExists('traits')
+    return knex.schema.dropTableIfExists('traits')
 };
