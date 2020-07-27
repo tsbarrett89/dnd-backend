@@ -36,5 +36,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('classes').dropTableIfExists('class_archetypes')
+    return knex.schema
+        .dropTableIfExists('class_archetypes')
+        .dropTableIfExists('classes')
 };
