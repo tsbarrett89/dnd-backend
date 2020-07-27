@@ -27,10 +27,23 @@ exports.up = function(knex) {
         tbl.string('proficiency')
             .notNullable()
     })
+    .createTable('character_languages', tbl => {
+        tbl.increments()
+        tbl.integer('character_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('characters')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.string('language')
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
     return knex.schema
+        .dropTableIfExists('character_languages')
         .dropTableIfExists('character_proficiencies')
         .dropTableIfExists('character_abilities')
 };
