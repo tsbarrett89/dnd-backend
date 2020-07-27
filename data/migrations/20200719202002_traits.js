@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-    return knex.schem.createTable('traits', tbl => {
+    return knex.schema.createTable('traits', tbl => {
         tbl.increments()
         tbl.integer('race_id')
             .unsigned()
