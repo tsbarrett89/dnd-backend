@@ -15,8 +15,22 @@ exports.up = function(knex) {
             .unsigned()
             .notNullable()
     })
+    .createTable('character_proficiencies', tbl => {
+        tbl.increments()
+        tbl.integer('character_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('characters')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
+        tbl.string('proficiency')
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('character_abilities')
+    return knex.schema
+        .dropTableIfExists('character_proficiencies')
+        .dropTableIfExists('character_abilities')
 };
