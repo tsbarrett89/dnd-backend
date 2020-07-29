@@ -52,7 +52,13 @@ exports.seed = function(knex) {
         {
           class: "fighter",
           hit_dice: "d10",
-          armor_proficiencies: ""
+          armor_proficiencies: "all armor, shields",
+          weapon_proficiencies: "simple weapons, martial weapons",
+          tool_proficiencies: "none",
+          save_proficiencies: "strength, constitution",
+          skill_choice_number: 2,
+          skill_choices: "acrobatics, animal handling, athletics, history, insight, intimidation, perception, survival",
+          equipment: "- (a) chain mail or (b) leather armor, longbow, and 20 arrows - (a) a martial weapon and a shield or (b) two martial weapons - (a) a light crossbow and 20 bolts or (b) two handaxes - (a) a dungeoneer's pack or (b) an explorer's pack"
         }
       ]);
     });
