@@ -67,6 +67,13 @@ exports.seed = function(knex) {
           tool_proficiencies: "One type of musical instrument",
           languages: "One of your choice",
           equipment: "A staff, a hunting trap, a trophy from an animal you killed, a set of traveler's clothes, and a pouch containing 10 gp."
+        },
+        {
+          background: "sage",
+          skill_proficiencies: "arcana, history",
+          tool_proficiencies: "none",
+          languages: "Two of your choice",
+          equipment: "A bottle of black ink, a quill, a small knife, a letter from a dead colleague posing a question you have not yet been able to answer, a set of common clothes, and a pouch containing 10 gp."
         }
       ]);
     });
