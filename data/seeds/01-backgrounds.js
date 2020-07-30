@@ -61,7 +61,13 @@ exports.seed = function(knex) {
           languages: "One of your choice",
           equipment: "A set of fine clothes, a signet ring, a scroll of pedigree, and a purse containing 25 gp."
         },
-        
+        {
+          background: "outlander",
+          skill_proficiencies: "athletics, survival",
+          tool_proficiencies: "One type of musical instrument",
+          languages: "One of your choice",
+          equipment: "A staff, a hunting trap, a trophy from an animal you killed, a set of traveler's clothes, and a pouch containing 10 gp."
+        }
       ]);
     });
 };
