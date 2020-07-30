@@ -1,13 +1,27 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('backgrounds').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('backgrounds').insert([
+        {
+          background: "acolyte",
+          skill_proficiencies: "insight, religion",
+          tool_proficiencies: "none",
+          languages: "two of your choice",
+          equipment: "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a pouch containing 15 gp."
+        },
+        {
+          background: "charlatan",
+          skill_proficiencies: "deception, sleight of hand",
+          tool_proficiencies: "disguise kit, forgery kit",
+          languages: "none",
+          equipment: "A set of fine clothes, a disguise kit, tools of the con or your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke), and a pouch containing 15gp."
+        },
+        {
+          background: ""
+        }
       ]);
     });
 };
