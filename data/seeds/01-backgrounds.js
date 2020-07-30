@@ -39,6 +39,13 @@ exports.seed = function(knex) {
           tool_proficiencies: "One type of artisan's tools, vehicles (land)",
           languages: "none",
           equipment: "A set of artisan's tools (one of your choice), a shovel, an iron pot, a set of common clothes, and a pouch containing 10 gp."
+        },
+        {
+          background: "guild artisan",
+          skill_proficiencies: "insight, persuasion",
+          tool_proficiencies: "One type of artisan's tools",
+          languages: "One of your choice",
+          equipment: "A set of artisan's tools (one of your choice), a letter of introduction from your guild, a set of traveler's clothes, and a pouch containing 15 gp."
         }
       ]);
     });
