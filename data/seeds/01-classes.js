@@ -59,6 +59,20 @@ exports.seed = function(knex) {
           skill_choice_number: 2,
           skill_choices: "acrobatics, animal handling, athletics, history, insight, intimidation, perception, survival",
           equipment: "- (a) chain mail or (b) leather armor, longbow, and 20 arrows - (a) a martial weapon and a shield or (b) two martial weapons - (a) a light crossbow and 20 bolts or (b) two handaxes - (a) a dungeoneer's pack or (b) an explorer's pack"
+        },
+        {
+          class: "monk",
+          hit_dice: "d8",
+          armor_proficiencies: "none",
+          weapon_proficiencies: "simple weapons, shortswords",
+          tool_proficiencies: "Choose any type of artisan's tools or one musical instrument",
+          save_proficiencies: "strength, dexterity",
+          skill_choice_number: 2,
+          skill_choices: "acrobatics, athletics, history, insight, religion, stealth",
+          equipment: "- (a) a shortsword or (b) any simple weapon - (a) a dungeoneer's pack or (b) an explorer's pack - 10 darts"
+        },
+        {
+          
         }
       ]);
     });
