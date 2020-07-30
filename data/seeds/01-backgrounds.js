@@ -24,7 +24,17 @@ exports.seed = function(knex) {
           skill_proficiencies: "deception, stealth",
           tool_proficiencies: "One type of gaming set, thieves' tools",
           languages: "none",
-          equipment: "A crowbar, a set of dark common clothes including a hood, and a pouch containing 15 gp"
+          equipment: "A crowbar, a set of dark common clothes including a hood, and a pouch containing 15 gp."
+        },
+        {
+          background: "entertainer",
+          skill_proficiencies: "acrobatics, performance",
+          tool_proficiencies: "disguise kit, one type of musical instrument",
+          languages: "none",
+          equipment: "A musical instrument (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), a costume, and a pouch containing 15 gp."
+        },
+        {
+          
         }
       ]);
     });
