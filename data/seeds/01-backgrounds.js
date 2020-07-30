@@ -74,6 +74,19 @@ exports.seed = function(knex) {
           tool_proficiencies: "none",
           languages: "Two of your choice",
           equipment: "A bottle of black ink, a quill, a small knife, a letter from a dead colleague posing a question you have not yet been able to answer, a set of common clothes, and a pouch containing 10 gp."
+        },
+        {
+          background: "sailor",
+          skill_proficiencies: "athletics, perception",
+          tool_proficiencies: "Navigator's tools, vehicles (water)",
+          languages: "none",
+          equipment: "A belaying pin (club), 50 feet of silk rope, a lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may roll for a random trinket on the Trinkets table"
+        },
+        {
+          background: "soldier",
+          skill_proficiencies: "athletics, intimidation",
+          tool_proficiencies: "One type of gaming set, vehicles (land)",
+          equipment: "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck of cards, a set of common clothes, and a pouch containing 10 gp."
         }
       ]);
     });
