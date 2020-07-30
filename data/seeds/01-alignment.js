@@ -11,11 +11,23 @@ exports.seed = function(knex) {
         },
         {
           alignment: "Neutral Good",
-          description: "Nuetral Good (NG) fold do the best they can to help others according to their needs."
+          description: "Nuetral good (NG) fold do the best they can to help others according to their needs."
         },
         {
           alignment: "Chaotic Good",
-          description: "Chaotic Good (CG) creatures act as their conscience directs, with litte regard for what others expect."
+          description: "Chaotic good (CG) creatures act as their conscience directs, with litte regard for what others expect."
+        },
+        {
+          alignment: "Lawful Neutral",
+          description: "Lawful neutral (LN) individuals act in accordance with law, tradition, or personal codes."
+        },
+        {
+          alignment: "Neutral",
+          description: "Neutral (N) is the alignment of those who prefer to steer clear of moral questions and don't take sides, doing what seems best at the time."
+        },
+        {
+          alignment: "Chaotic Neutral",
+          description: "Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else."
         }
       ]);
     });
