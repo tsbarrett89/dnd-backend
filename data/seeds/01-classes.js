@@ -85,6 +85,33 @@ exports.seed = function(knex) {
           save_proficiencies: "dexterity, intelligence",
           skill_choice_number: 4,
           skill_choices: "acrobatics, athletics, deception, insight, intimidation, investigation, perception, performance, persuasion, sleight of hand, stealth"
+        },
+        {
+          class: "sorcerer",
+          hit_dice: "d6",
+          armor_proficiencies: "none",
+          weapon_proficiencies: "daggers, darts, slings, quarterstaffs, light crossbows",
+          save_proficiencies: "constitution, charisma",
+          skill_choice_number: 2,
+          skill_choices: "arcana, deception, insight, intimidation, persuasion, religion"
+        },
+        {
+          class: "warlock",
+          hit_dice: "d8",
+          armor_proficiencies: "light armor",
+          weapon_proficiencies: "simple weapons",
+          save_proficiencies: "wisdom, charisma",
+          skill_choice_number: 2,
+          skill_choices: "arcana, deception, history, intimidation, investigation, nature, religion"
+        },
+        {
+          class: "wizard",
+          hit_dice: "d6",
+          armor_proficiencies: "none",
+          weapon_proficiencies: "daggers, darts, slings, quarterstaffs, light crossbows",
+          save_proficiencies: "intelligence, wisdom",
+          skill_choice_number: 2,
+          skill_choices: "arcana, history, insight, investigation, medicine, and religion"
         }
       ]);
     });
