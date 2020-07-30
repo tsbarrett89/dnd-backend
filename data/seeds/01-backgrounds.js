@@ -87,6 +87,13 @@ exports.seed = function(knex) {
           skill_proficiencies: "athletics, intimidation",
           tool_proficiencies: "One type of gaming set, vehicles (land)",
           equipment: "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck of cards, a set of common clothes, and a pouch containing 10 gp."
+        },
+        {
+          background: "urchin",
+          skill_proficiencies: "sleight of hand, stealth",
+          tool_proficiencies: "disguise kit, thieves' tools",
+          languages: "none",
+          equipment: "A small knife, a map of the city you grew up in,"
         }
       ]);
     });
