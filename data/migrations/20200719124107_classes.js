@@ -18,8 +18,6 @@ exports.up = function(knex) {
             .notNullable()
         tbl.text('skill_choices')
             .notNullable()
-        tbl.text('equipment')
-            .notNullable()
     })
     .createTable('class_archetypes', tbl => {
         tbl.increments();
