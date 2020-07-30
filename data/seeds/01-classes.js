@@ -72,6 +72,17 @@ exports.seed = function(knex) {
           equipment: "- (a) a shortsword or (b) any simple weapon - (a) a dungeoneer's pack or (b) an explorer's pack - 10 darts"
         },
         {
+          class: "paladin",
+          hit_dice: "d10",
+          armor_proficiencies: "all armor, shields",
+          weapon_proficiencies: "simple weapons, martial weapons",
+          tool_proficiencies: "none",
+          save_proficiencies: "wisdom, charisma",
+          skill_choice_number: 2,
+          skill_choices: "athletics, insight, intimidation, medicine, persuasion, religion",
+          equipment: "- (a) a martial weapon and a shield or (b) two martial weapons - (a) five javelins or (b) any simple melee weapon - (a) a priest's pack or (b) an explorer's pack - chain mail and a holy symbol"
+        },
+        {
           
         }
       ]);
