@@ -86,6 +86,7 @@ exports.seed = function(knex) {
           background: "soldier",
           skill_proficiencies: "athletics, intimidation",
           tool_proficiencies: "One type of gaming set, vehicles (land)",
+          languages: "none",
           equipment: "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck of cards, a set of common clothes, and a pouch containing 10 gp."
         },
         {
