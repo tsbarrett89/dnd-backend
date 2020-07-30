@@ -76,6 +76,15 @@ exports.seed = function(knex) {
           save_proficiencies: "strength, dexterity",
           skill_choice_number: 3,
           skill_choices: "animal handling, athletics, insight, investigation, nature, perception, stealth, survival"
+        },
+        {
+          class: "rogue",
+          hit_dice: "d8",
+          armor_proficiencies: "light armor",
+          weapon_proficiencies: "simple weapons, hand crossbows, longswords, rapiers, shortswords",
+          save_proficiencies: "dexterity, intelligence",
+          skill_choice_number: 4,
+          skill_choices: "acrobatics, athletics, deception, insight, intimidation, investigation, perception, performance, persuasion, sleight of hand, stealth"
         }
       ]);
     });
