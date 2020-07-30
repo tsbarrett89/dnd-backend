@@ -34,7 +34,11 @@ exports.seed = function(knex) {
           equipment: "A musical instrument (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), a costume, and a pouch containing 15 gp."
         },
         {
-          
+          background: "folk hero",
+          skill_proficiencies: "animal handling, survival",
+          tool_proficiencies: "One type of artisan's tools, vehicles (land)",
+          languages: "none",
+          equipment: "A set of artisan's tools (one of your choice), a shovel, an iron pot, a set of common clothes, and a pouch containing 10 gp."
         }
       ]);
     });
