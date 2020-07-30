@@ -28,6 +28,18 @@ exports.seed = function(knex) {
         {
           alignment: "Chaotic Neutral",
           description: "Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else."
+        },
+        {
+          alignment: "Lawful Evil",
+          description: "Lawful evil (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order."
+        },
+        {
+          alignment: "Nuetral Evil",
+          description: "Neutral evil (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms."
+        },
+        {
+          alignment: "Chaotic Evil",
+          description: "Chaotic evil (CE) creatures act with arbritrary violence, spurred by their greed, hatred, or bloodlust."
         }
       ]);
     });
