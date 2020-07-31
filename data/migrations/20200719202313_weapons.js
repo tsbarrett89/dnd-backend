@@ -1,23 +1,49 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('weapons', tbl => {
-        tbl.increments()
-        tbl.string('weapon')
-            .notNullable()
-            .unique()
-        tbl.string('weapon_type')
-            .notNullable()
-        tbl.string('cost')
-            .notNullable()
-        tbl.string('damage')
-            .notNullable()
-        tbl.string('damage_type')
-            .notNullable()
-        tbl.string('weight')
-            .notNullable()
+    return knex.schema
+        .createTable('damage_types', tbl => {
+            tbl.increments()
+            tbl.string('type')
+                .unique()
+                .notNullable()
+        })
+        .createTable('weapon_types', tbl => {
+            tbl.increments()
+            tbl.string('type')
+                .unique()
+                .notNullable()
+        })
+        .createTable('weapons', tbl => {
+            tbl.increments()
+            tbl.string('weapon')
+                .notNullable()
+                .unique()
+            tbl.integer('weapon_type_id')
+                .unisgned()
+                .notNullable()
+                .references('id')
+                .inTable('weapon_types')
+                .onDelete('RESTRICT')
+                .onUpdate('CASCADE')
+            tbl.string('cost')
+                .notNullable()
+            tbl.string('damage')
+                .notNullable()
+            tbl.integer('damage_type_id')
+                .unisgned()
+                .notNullable()
+                .references('id')
+                .inTable('damage_types')
+                .onDelete('RESTRICT')
+                .onUpdate('CASCADE')
+            tbl.string('weight')
+                .notNullable()
     })
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('weapons')
+    return knex.schema
+        .dropTableIfExists('weapons')
+        .dropTableIfExists('damage_types')
+        .dropTableIfExists('weapon_types')
 };
