@@ -1,6 +1,7 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('character_abilities', tbl => {
+    return knex.schema
+    .createTable('character_abilities', tbl => {
         tbl.increments()
         tbl.integer('character_id')
             .unsigned()
@@ -9,8 +10,13 @@ exports.up = function(knex) {
             .inTable('characters')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('ability')
+        tbl.integer('ability_id')
+            .unsigned()
             .notNullable()
+            .references('id')
+            .inTable('abilities')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
         tbl.integer('ability_score')
             .unsigned()
             .notNullable()
@@ -24,8 +30,13 @@ exports.up = function(knex) {
             .inTable('characters')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('proficiency')
+        tbl.string('proficiency_id')
+            .unsigned()
             .notNullable()
+            .references('id')
+            .inTable('proficiencies')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
     })
     .createTable('character_languages', tbl => {
         tbl.increments()
@@ -36,8 +47,13 @@ exports.up = function(knex) {
             .inTable('characters')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('language')
+        tbl.string('language_id')
+            .unsigned()
             .notNullable()
+            .references('id')
+            .inTable('languages')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
     })
 };
 
