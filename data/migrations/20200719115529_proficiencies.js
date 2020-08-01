@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('proficiencies', tbl => {
+    return knex.schema.createTable('proficiencies_misc', tbl => {
         tbl.increments()
         tbl.string('proficiency')
             .unique()

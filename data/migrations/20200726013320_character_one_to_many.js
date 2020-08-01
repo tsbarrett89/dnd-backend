@@ -34,7 +34,7 @@ exports.up = function(knex) {
             .unsigned()
             .notNullable()
             .references('id')
-            .inTable('proficiencies')
+            .inTable('proficiencies_misc')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
     })
