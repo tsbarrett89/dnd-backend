@@ -5,8 +5,10 @@ exports.up = function(knex) {
         tbl.string('pack')
             .unique()
             .notNullable()
+        tbl.string('cost')
+            .notNullable()
         tbl.text('contents')
-            .notNullable
+            .notNullable()
     })
 };
 
