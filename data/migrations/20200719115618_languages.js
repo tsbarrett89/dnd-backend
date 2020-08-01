@@ -5,6 +5,8 @@ exports.up = function(knex) {
         tbl.string('language')
             .unique()
             .notNullable()
+        tbl.string('script')
+            .notNullable()
     })
 };
 
