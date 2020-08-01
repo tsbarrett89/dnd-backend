@@ -5,6 +5,8 @@ exports.up = function(knex) {
         tbl.string('name')
             .notNullable()
             .unique()
+        tbl.string('type')
+            .deaultTo('none')
         tbl.string('cost')
             .notNullable()
         tbl.string('weight')
