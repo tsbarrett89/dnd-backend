@@ -31,7 +31,7 @@ exports.up = function(knex) {
             tbl.integer('strenght_req')
                 .unsigned()
                 .defaultTo(0)
-            tbl.boolean('steal_disadvantage')
+            tbl.boolean('stealth_disadvantage')
                 .defaultTo(false)
             tbl.string('weight')
                 .notNullable()
