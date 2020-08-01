@@ -5,8 +5,13 @@ exports.up = function(knex) {
         tbl.string('skill')
             .notNullable()
             .unique()
-        tbl.string('ability_modifier')
+        tbl.integer('ability_modifier_id')
+            .unsigned()
             .notNullable()
+            .references('id')
+            .inTable('abilities')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE')
     })
 };
 
