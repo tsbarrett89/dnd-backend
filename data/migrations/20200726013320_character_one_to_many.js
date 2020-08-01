@@ -21,7 +21,7 @@ exports.up = function(knex) {
             .unsigned()
             .notNullable()
     })
-    .createTable('character_proficiencies', tbl => {
+    .createTable('character_tool_proficiencies', tbl => {
         tbl.increments()
         tbl.integer('character_id')
             .unsigned()
@@ -30,11 +30,11 @@ exports.up = function(knex) {
             .inTable('characters')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('proficiency_id')
+        tbl.string('tool_id')
             .unsigned()
             .notNullable()
             .references('id')
-            .inTable('proficiencies_misc')
+            .inTable('tools')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
     })
