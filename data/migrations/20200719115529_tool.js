@@ -5,6 +5,8 @@ exports.up = function(knex) {
         tbl.string('tool')
             .unique()
             .notNullable()
+        tbl.string('type')
+            .defaultTo('none')
     })
 };
 
