@@ -6,7 +6,7 @@ exports.up = function(knex) {
             .notNullable()
             .unique()
         tbl.string('type')
-            .deaultTo('none')
+            .defaultTo('none')
         tbl.string('cost')
             .notNullable()
         tbl.string('weight')
