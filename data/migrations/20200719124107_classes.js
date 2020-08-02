@@ -17,7 +17,7 @@ exports.up = function(knex) {
         tbl.text('skill_choices')
             .notNullable()
     })
-    .createTable('class_archetypes', tbl => {
+    .createTable('subclasses', tbl => {
         tbl.increments();
         tbl.integer('class_id')
             .unsigned()
@@ -26,7 +26,7 @@ exports.up = function(knex) {
             .inTable('classes')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.string('archetype')
+        tbl.string('subclass')
             .notNullable()
     })
 };
