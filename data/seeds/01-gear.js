@@ -269,6 +269,270 @@ exports.seed = function(knex) {
           cost: "10 gp",
           weight: "1 lb.",
           description: "A druid can use such an object as a spellcasting focus."
+        },
+        {
+          name: "fishing tackle",
+          cost: "1 gp",
+          weight: "4 lb.",
+          description: "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
+        },
+        {
+          name: "flask",
+          cost: "2 cp",
+          weight: "1 lb.",
+          description: "none"
+        },
+        {
+          name: "tankard",
+          cost: "2 cp",
+          weight: "1 lb.",
+          description: "none"
+        },
+        {
+          name: "grappling hook",
+          cost: "2 gp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "hammer",
+          cost: "1 gp",
+          weight: "3 lb.",
+          description: "none"
+        },
+        {
+          name: "sledge hammer",
+          cost: "2 gp",
+          weight: "10 lb.",
+          description: "none"
+        },
+        {
+          name: "healer's kit",
+          cost: "5 gp",
+          weight: "3 lb.",
+          description: "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+        },
+        {
+          name: "amulet",
+          type: "holy symbol",
+          cost: "5 gp",
+          weight: "1 lb.",
+          description: "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+        },
+        {
+          name: "emblem",
+          type: "holy symbol",
+          cost: "5 gp",
+          weight: "none",
+          description: "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+        },
+        {
+          name: "reliquary",
+          type: "holy symbol",
+          cost: "5 gp",
+          weight: "2 lb.",
+          description: "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+        },
+        {
+          name: "holy water (flask)",
+          cost: "25 gp",
+          weight: "2 lb.",
+          description: "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage. A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot."
+        },
+        {
+          name: "hourglass",
+          cost: "25 gp",
+          weight: "1 lb.",
+          description: "none"
+        },
+        {
+          name: "hunting trap",
+          cost: "5 gp",
+          weight: "25 lb.",
+          description: "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movementis limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature."
+        },
+        {
+          name: "ink",
+          cost: "10 gp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "ink pen",
+          cost: "2 cp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "jug",
+          cost: "2 cp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "pitcher",
+          cost: "2 cp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "ladder (10-foot)",
+          cost: "1 sp",
+          weight: "25 lb.",
+          description: "none"
+        },
+        {
+          name: "lamp",
+          cost: "5 sp",
+          weight: "1 lb.",
+          description: "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask of oil."
+        },
+        {
+          name: "bullseye lantern",
+          cost: "10 gp",
+          weight: "2 lb.",
+          description: "A bullseye lantern cast bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask of oil."
+        },
+        {
+          name: "hooded lantern",
+          cost: "5 gp",
+          weight: "2 lb.",
+          description: "A hooded lantern casts a bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
+        },
+        {
+          name: "lock",
+          cost: "10 gp",
+          weight: "1 lb.",
+          description: "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your DM may decide taht better locks are available for higher prices."
+        },
+        {
+          name: "magnifying glass",
+          cost: "100 gp",
+          weight: "none",
+          description: "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite. A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed."
+        },
+        {
+          name: "manacles",
+          cost: "2 gp",
+          weight: "6 lb.",
+          description: "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
+        },
+        {
+          name: "mess kit",
+          cost: "2 sp",
+          weight: "1 lb.",
+          description: "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl."
+        },
+        {
+          name: "steel mirror",
+          cost: "5 gp",
+          weight: ".5 lb.",
+          description: "none"
+        },
+        {
+          name: "flask of oil",
+          cost: "1 sp",
+          weight: "1 lb.",
+          description: "Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area. provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends it turn in the area. A creature can take this damage only once per turn."
+        },
+        {
+          name: "paper sheet",
+          cost: "2 sp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "parchment sheet",
+          cost: "1 sp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "vial of perfume",
+          cost: "5 gp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "miner's pick",
+          cost: "2 gp",
+          weight: "10 lb.",
+          description: "none"
+        },
+        {
+          name: "piton",
+          cost: "5 cp",
+          weight: ".25 lb.",
+          description: "none"
+        },
+        {
+          name: "vial of basic poison",
+          cost: "100 gp",
+          weight: "none",
+          description: "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must take a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+        },
+        {
+          name: "pole (10-foot)",
+          cost: "5 cp",
+          weight: "7 lb.",
+          description: "none"
+        },
+        {
+          name: "iron pot",
+          cost: "2 gp",
+          weight: "10 lb.",
+          description: "none"
+        },
+        {
+          name: "potion of healing",
+          cost: "50 gp",
+          weight: ".5 lb.",
+          description: "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action."
+        },
+        {
+          name: "pouch",
+          cost: "5 sp",
+          weight: "1 lb.",
+          description: "A cloth or leather puch can hold up to 20 sling bullets or 50 blowgun needles, among other things."
+        },
+        {
+          name: "quiver",
+          cost: "1 gp",
+          weight: "1 lb.",
+          description: "A quiver can hold up to 20 arrows."
+        },
+        {
+          name: "portable ram",
+          cost: "4 gp",
+          weight: "35 lb.",
+          description: "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+        },
+        {
+          name: "days rations",
+          cost: "5 sp",
+          weight: "2 lb.",
+          description: "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+        },
+        {
+          name: "robes",
+          cost: "1 gp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "hempen rope (50 feet)",
+          cost: "1 gp",
+          weight: "10 lb.",
+          description: "Rope has 2 hit points and can be burst with a DC 17 Strength check."
+        },
+        {
+          name: "silk rope (50 feet)",
+          cost: "10 gp",
+          weight: "5 lb.",
+          description: "Rope has 2 hit points and can be burst with a DC 17 Strength check."
+        },
+        {
+          
         }
       ]);
     });
