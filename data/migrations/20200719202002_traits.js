@@ -7,7 +7,7 @@ exports.up = function(knex) {
             .notNullable()
             .references('id')
             .inTable('races')
-            .onDelete('RESTRICT')
+            .onDelete('CASCADE')
             .onUpdate('CASCADE')
         tbl.string('trait')
             .notNullable()
