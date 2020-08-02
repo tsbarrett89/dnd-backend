@@ -624,7 +624,8 @@ exports.seed = function(knex) {
         {
           name: "whetstone",
           cost: "1 cp",
-          weight: "1 lb."
+          weight: "1 lb.",
+          description: "none"
         }
       ]);
     });
