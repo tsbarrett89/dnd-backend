@@ -532,7 +532,99 @@ exports.seed = function(knex) {
           description: "Rope has 2 hit points and can be burst with a DC 17 Strength check."
         },
         {
-          
+          name: "sack",
+          cost: "1 cp",
+          weight: ".5 lb.",
+          description: "none"
+        },
+        {
+          name: "merchant's scale",
+          cost: "5 gp",
+          weight: "3 lb.",
+          description: "A scale includes a small balance, pans, and asuitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth."
+        },
+        {
+          name: "sealing wax",
+          cost: "5 sp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "shovel",
+          cost: "2 gp",
+          weight: "5 lb.",
+          description: "none"
+        },
+        {
+          name: "signal whistle",
+          cost: "5 cp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "signet ring",
+          cost: "5 gp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "soap",
+          cost: "2 cp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "spellbook",
+          cost: "50 gp",
+          weight: "3 lb.",
+          description: "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
+        },
+        {
+          name: "iron spikes (10)",
+          cost: "1 gp",
+          weight: "5 lb.",
+          description: "none"
+        },
+        {
+          name: "spyglass",
+          cost: "1,000 gp",
+          weight: "1 lb.",
+          description: "Objects viewed through a spyglass are magnified to twice their size."
+        },
+        {
+          name: "tent",
+          cost: "2 gp",
+          weight: "20 lb.",
+          description: "A simple and portable canvas shelter, a tent sleeps two."
+        },
+        {
+          name: "tinderbox",
+          cost: "5 sp",
+          weight: "1 lb.",
+          description: "This small container holds dlint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch - or anything else with abundant, exposed fuel - takes an action. Lighting any other fire takes 1 minute."
+        },
+        {
+          name: "torch",
+          cost: "1 cp",
+          weight: "1 lb.",
+          description: "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
+        },
+        {
+          name: "vial",
+          cost: "1 gp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "waterskin",
+          cost: "2 sp",
+          weight: "5 lb.",
+          description: "none"
+        },
+        {
+          name: "whetstone",
+          cost: "1 cp",
+          weight: "1 lb."
         }
       ]);
     });
