@@ -49,7 +49,7 @@ exports.seed = function(knex) {
         },
         {
           background: "hermit",
-          skill_proficiencies: "medecine, religion",
+          skill_proficiencies: "medicine, religion",
           tool_proficiencies: "herbalism kit",
           languages: "One of your choice",
           equipment: "A scroll case stuffed full of notes from your studies or prayers, a winter "
