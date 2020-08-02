@@ -8,14 +8,7 @@ exports.up = function(knex) {
             .inTable('classes')
             .onDelete('RESTRICT')
             .onUpdate('CASCADE')
-        tbl.integer('archetype_id')
-            .unsigned()
-            .defaultTo(0)
-            .references('id')
-            .inTable('class_archetypes')
-            .onDelete('RESTRICT')
-            .onUpdate('CASCADE')
-        tbl.string('name')
+        tbl.string('feature')
             .notNullable()
         tbl.integer('level')
             .unsigned()
@@ -23,8 +16,24 @@ exports.up = function(knex) {
         tbl.text('description')
             .notNullable()
     })
+    .createTable('feature_options', tbl => {
+        tbl.increments()
+        tbl.integer('feature_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('features')
+            .onDelete('CASCADE')
+            .onUpdate('CASCADE')
+        tbl.string('option')
+            .notNullable()
+        tbl.text('description')
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('features')
+    return knex.schema
+        .dropTableIfExists('feature_options')
+        .dropTableIfExists('features')
 };
