@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
     return knex.schema.createTable('languages', tbl => {
-        tbl.increment()
+        tbl.increments()
         tbl.string('language')
             .unique()
             .notNullable()
