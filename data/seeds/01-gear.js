@@ -163,6 +163,112 @@ exports.seed = function(knex) {
           cost: "1 gp",
           weight: "2 lb.",
           description: "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succed on a DC 15 dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regainst at least 1 hit point. A creature moving through the area at half speed doesn't need to to make the save."
+        },
+        {
+          name: "candle",
+          cost: "1 cp",
+          weight: "none",
+          description: "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 15 feet."
+        },
+        {
+          name: "crossbow bolt case",
+          cost: "1 gp",
+          weight: "1 lb.",
+          description: "This wooden case can hold up to tweny crossbow bolts."
+        },
+        {
+          name: "map or scroll case",
+          cost: "1 gp",
+          weight: "1 lb.",
+          description: "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment."
+        },
+        {
+          name: "chain (10 feet)",
+          cost: "5 gp",
+          weight: "25 lb.",
+          description: "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
+        },
+        {
+          name: "chalk",
+          cost: "1 cp",
+          weight: "none",
+          description: "none"
+        },
+        {
+          name: "chest",
+          cost: "5 gp",
+          weight: "25 lb.",
+          description: "none"
+        },
+        {
+          name: "climber's kit",
+          cost: "25 gp",
+          weight: "12 lb.",
+          description: "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
+        },
+        {
+          name: "common clothes",
+          cost: "5 sp",
+          weight: "3 lb.",
+          description: "none"
+        },
+        {
+          name: "costume",
+          cost: "5 gp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "fine clothes",
+          cost: "15 gp",
+          weight: "6 lb.",
+          description: "none"
+        },
+        {
+          name: "traveler's clothes",
+          cost: "2 gp",
+          weight: "4 lb.",
+          description: "none"
+        },
+        {
+          name: "component pouch",
+          cost: "25 gp",
+          weight: "2 lb.",
+          description: "A component pouch is a small, watertight leather belt puch taht has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)."
+        },
+        {
+          name: "crowbar",
+          cost: "2 gp",
+          weight: "5 lb.",
+          description: "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
+        },
+        {
+          name: "sprig of mistletoe",
+          type: "druidic focus",
+          cost: "1 gp",
+          weight: "none",
+          description: "A druid can use such an object as a spellcasting focus."
+        },
+        {
+          name: "totem",
+          type: "druidic focus",
+          cost: "1 gp",
+          weight: "none",
+          description: "A druid can use such an object as a spellcasting focus."
+        },
+        {
+          name: "wooden staff",
+          type: "druidic focus",
+          cost: "5 gp",
+          weight: "4 lb.",
+          description: "A druid can use such an object as a spellcasting focus."
+        },
+        {
+          name: "yew wand",
+          type: "druidic focus",
+          cost: "10 gp",
+          weight: "1 lb.",
+          description: "A druid can use such an object as a spellcasting focus."
         }
       ]);
     });
