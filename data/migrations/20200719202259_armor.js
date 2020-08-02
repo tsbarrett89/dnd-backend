@@ -13,7 +13,7 @@ exports.up = function(knex) {
                 .notNullable()
                 .unique()
             tbl.integer('armor_type_id')
-                .unisgned()
+                .unsigned()
                 .notNullable()
                 .references('id')
                 .inTable('armor_types')
