@@ -1,293 +1,293 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('class_archetypes').del()
+  return knex('subclasses').del()
     .then(function () {
       // Inserts seed entries
-      return knex('class_archetypes').insert([
+      return knex('subclasses').insert([
         {
           class_id: 1,
-          archetype: "Path of the Berserker"
-        },
-        {
-          class_id: 1,
-          archetype: "Path of the Totem Warrior"
+          subclass: "Path of the Berserker"
         },
         {
           class_id: 1,
-          archetype: "Path of the Ancestral Guardian"
+          subclass: "Path of the Totem Warrior"
         },
         {
           class_id: 1,
-          archetype: "Path of the Storm Herald"
+          subclass: "Path of the Ancestral Guardian"
         },
         {
           class_id: 1,
-          archetype: "Path of the Zealot"
+          subclass: "Path of the Storm Herald"
+        },
+        {
+          class_id: 1,
+          subclass: "Path of the Zealot"
         },
         {
           class_id: 2,
-          archetype: "College of Lore"
+          subclass: "College of Lore"
         },
         {
           class_id: 2,
-          archetype: "College of Valor"
+          subclass: "College of Valor"
         },
         {
           class_id: 2,
-          archetype: "College of Glamour"
+          subclass: "College of Glamour"
         },
         {
           class_id: 2,
-          archetype: "College of Swords"
+          subclass: "College of Swords"
         },
         {
           class_id: 2,
-          archetype: "College of Whispers"
+          subclass: "College of Whispers"
         },
         {
           class_id: 3,
-          archetype: "Knowledge Domain"
+          subclass: "Knowledge Domain"
         },
         {
           class_id: 3,
-          archetype: "Life Domain"
+          subclass: "Life Domain"
         },
         {
           class_id: 3,
-          archetype: "Light Domain"
+          subclass: "Light Domain"
         },
         {
           class_id: 3,
-          archetype: "Nature Domain"
+          subclass: "Nature Domain"
         },
         {
           class_id: 3,
-          archetype: "Tempest Domain"
+          subclass: "Tempest Domain"
         },
         {
           class_id: 3,
-          archetype: "Trickery Domain"
+          subclass: "Trickery Domain"
         },
         {
           class_id: 3,
-          archetype: "War Domain"
+          subclass: "War Domain"
         },
         {
           class_id: 3,
-          archetype: "Forge Domain"
+          subclass: "Forge Domain"
         },
         {
           class_id: 3,
-          archetype: "Grave Domain"
+          subclass: "Grave Domain"
         },
         {
           class_id: 4,
-          archetype: "Circle of the Land"
+          subclass: "Circle of the Land"
         },
         {
           class_id: 4,
-          archetype: "Circle of the Moon"
+          subclass: "Circle of the Moon"
         },
         {
           class_id: 4,
-          archetype: "Circle of Dreams"
+          subclass: "Circle of Dreams"
         },
         {
           class_id: 4,
-          archetype: "Circle of the Sheperd"
+          subclass: "Circle of the Sheperd"
         },
         {
           class_id: 5,
-          archetype: "Champion"
+          subclass: "Champion"
         },
         {
           class_id: 5,
-          archetype: "Battle Master"
+          subclass: "Battle Master"
         },
         {
           class_id: 5,
-          archetype: "Eldritch Knight"
+          subclass: "Eldritch Knight"
         },
         {
           class_id: 5,
-          archetype: "Arcane Archer"
+          subclass: "Arcane Archer"
         },
         {
           class_id: 5,
-          archetype: "Cavalier"
+          subclass: "Cavalier"
         },
         {
           class_id: 5,
-          archetype: "Samurai"
+          subclass: "Samurai"
         },
         {
           class_id: 6,
-          archetype: "Way of the Open Hand"
+          subclass: "Way of the Open Hand"
         },
         {
           class_id: 6,
-          archetype: "Way of Shadow"
+          subclass: "Way of Shadow"
         },
         {
           class_id: 6,
-          archetype: "Way of the Four Elements"
+          subclass: "Way of the Four Elements"
         },
         {
           class_id: 6,
-          archetype: "Way of the Drunken Master"
+          subclass: "Way of the Drunken Master"
         },
         {
           class_id: 6,
-          archetype: "Way of the Kensei"
+          subclass: "Way of the Kensei"
         },
         {
           class_id: 6,
-          archetype: "Way of the Sun Soul"
+          subclass: "Way of the Sun Soul"
         },
         {
           class_id: 7,
-          archetype: "Oath of Devotion"
+          subclass: "Oath of Devotion"
         },
         {
           class_id: 7,
-          archetype: "Oath of the Ancients"
+          subclass: "Oath of the Ancients"
         },
         {
           class_id: 7,
-          archetype: "Oath of Vengeance"
+          subclass: "Oath of Vengeance"
         },
         {
           class_id: 7,
-          archetype: "Oath of Conquest"
+          subclass: "Oath of Conquest"
         },
         {
           class_id: 7,
-          archetype: "Oath of Redemption"
+          subclass: "Oath of Redemption"
         },
         {
           class_id: 8,
-          archetype: "Hunter"
+          subclass: "Hunter"
         },
         {
           class_id: 8,
-          archetype: "Beast Master"
+          subclass: "Beast Master"
         },
         {
           class_id: 8,
-          archetype: "Gloom Stalker"
+          subclass: "Gloom Stalker"
         },
         {
           class_id: 8,
-          archetype: "Horizon Walker"
+          subclass: "Horizon Walker"
         },
         {
           class_id: 8,
-          archetype: "Monster Slayer"
+          subclass: "Monster Slayer"
         },
         {
           class_id: 9,
-          archetype: "Thief"
+          subclass: "Thief"
         },
         {
           class_id: 9,
-          archetype: "Assassin"
+          subclass: "Assassin"
         },
         {
           class_id: 9,
-          archetype: "Arcane Trickster"
+          subclass: "Arcane Trickster"
         },
         {
           class_id: 9,
-          archetype: "Inquisitive"
+          subclass: "Inquisitive"
         },
         {
           class_id: 9,
-          archetype: "Mastermind"
+          subclass: "Mastermind"
         },
         {
           class_id: 9,
-          archetype: "Scout"
+          subclass: "Scout"
         },
         {
           class_id: 9,
-          archetype: "Swashbuckler"
+          subclass: "Swashbuckler"
         },
         {
           class_id: 10,
-          archetype: "Draconic Bloodline"
+          subclass: "Draconic Bloodline"
         },
         {
           class_id: 10,
-          archetype: "Wild Magic"
+          subclass: "Wild Magic"
         },
         {
           class_id: 10,
-          archetype: "Divine Soul"
+          subclass: "Divine Soul"
         },
         {
           class_id: 10,
-          archetype: "Shadow Magic"
+          subclass: "Shadow Magic"
         },
         {
           class_id: 10,
-          archetype: "Storm Sorcery"
+          subclass: "Storm Sorcery"
         },
         {
           class_id: 11,
-          archetype: "The Archfey"
+          subclass: "The Archfey"
         },
         {
           class_id: 11,
-          archetype: "The Fiend"
+          subclass: "The Fiend"
         },
         {
           class_id: 11,
-          archetype: "The Great Old One"
+          subclass: "The Great Old One"
         },
         {
           class_id: 11,
-          archetype: "The Celestial"
+          subclass: "The Celestial"
         },
         {
           class_id: 11,
-          archetype: "The Hexblade"
+          subclass: "The Hexblade"
         },
         {
           class_id: 12,
-          archetype: "School of Abjuration"
+          subclass: "School of Abjuration"
         },
         {
           class_id: 12,
-          archetype: "School of Conjuration"
+          subclass: "School of Conjuration"
         },
         {
           class_id: 12,
-          archetype: "School of Divination"
+          subclass: "School of Divination"
         },
         {
           class_id: 12,
-          archetype: "School of Enchantment"
+          subclass: "School of Enchantment"
         },
         {
           class_id: 12,
-          archetype: "School of Evocation"
+          subclass: "School of Evocation"
         },
         {
           class_id: 12,
-          archetype: "School of Illusion"
+          subclass: "School of Illusion"
         },
         {
           class_id: 12,
-          archetype: "School of Necromancy"
+          subclass: "School of Necromancy"
         },
         {
           class_id: 12,
-          archetype: "School of Transmutation"
+          subclass: "School of Transmutation"
         },
         {
           class_id: 12,
-          archetype: "War Magic"
+          subclass: "War Magic"
         }
       ]);
     });
