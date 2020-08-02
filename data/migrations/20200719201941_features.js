@@ -30,10 +30,42 @@ exports.up = function(knex) {
         tbl.text('description')
             .notNullable()
     })
+    .createTable('subclass_features', tbl => {
+        tbl.increments()
+        tbl.integer('subclass_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('subclasses')
+            .onDelete('CASCADE')
+            .onUpdate('CASCADE')
+        tbl.string('feature')
+            .notNullable()
+        tbl.integer('level')
+            .notNullable()
+        tbl.text('description')
+            .notNullable()
+    })
+    .createTable('subclass_feature_options', tbl => {
+        tbl.increments()
+        tbl.integer('subclass_feature_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('subclass_features')
+            .onDelete('CASCADE')
+            .onUpdate('CASCADE')
+        tbl.string('option')
+            .notNullable()
+        tbl.text('description')
+            .notNullable()
+    })
 };
 
 exports.down = function(knex) {
     return knex.schema
+        .dropTableIfExists('subclass_feature_options')
+        .dropTableIfExists('sublcass_features')
         .dropTableIfExists('feature_options')
         .dropTableIfExists('features')
 };
