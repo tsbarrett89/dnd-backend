@@ -15,8 +15,6 @@ exports.up = function(knex) {
             .notNullable()
         tbl.text('description')
             .notNullable()
-        tbl.text('description_html')
-            .notNullable()
     })
     .createTable('feature_options', tbl => {
         tbl.increments()
@@ -30,8 +28,6 @@ exports.up = function(knex) {
         tbl.string('option')
             .notNullable()
         tbl.text('description')
-            .notNullable()
-        tbl.text('description_html')
             .notNullable()
     })
     .createTable('subclass_features', tbl => {
@@ -49,8 +45,6 @@ exports.up = function(knex) {
             .notNullable()
         tbl.text('description')
             .notNullable()
-        tbl.text('description_html')
-            .notNullable()
     })
     .createTable('subclass_feature_options', tbl => {
         tbl.increments()
@@ -64,8 +58,6 @@ exports.up = function(knex) {
         tbl.string('option')
             .notNullable()
         tbl.text('description')
-            .notNullable()
-        tbl.text('description_html')
             .notNullable()
     })
 };
